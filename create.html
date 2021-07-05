@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <style>
+        html{font-size:62.5%;}
+        *{padding:0; margin:0;}
+       #main{ font-size:4rem;width:100%; height:100vh;  display:flex; flex-direction:column; justify-content: center; align-items: center;}
+    
+        input{width:20rem; height:2rem;}
+        td{padding:1rem;}
+
+
+
+        @media(max-width:400px){
+html{font-size:35%;}
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main" >
+        <form action="a.php" enctype="application/x-form-urlencoded" autocomplete>
+    
+              <table border='1px'  cellspacing="10rem" cellpadding="1rem">
+                  <tr>
+                      <td valign="center"><label>name</label></td><td ><input type="text" placeholder="name" required autofocus></td>
+                  </tr>
+                  <tr>
+                      <td><label>sir name</label></td><td><input type="text" placeholder="sir name" required ></td>
+                  </tr>
+                  <tr>
+                      <td><label>gmail</label></td><td><input type="mail" placeholder="gmail" ></td>
+                  </tr>
+                  <tr>
+                      <td><label>phone no</label></td><td><input type="tel" placeholder="phone.no" required pattern=[0-9]{10}></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2" align="center"><input type="submit" value="sign in"></td>
+                  </tr>
+              </table>
+
+               </form>
+    </div>
+    
+</body>
+</html>

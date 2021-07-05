@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <title>account</title>
+
+<style>
+    html{font-size:62.5%;}
+    *{padding:0; margin:0;}
+body{font-family: 'Poppins', sans-serif;}
+nav{ width:100%; display:flex; align-items: center; justify-content: space-between;
+           height:15vh; }
+           nav #logo{width:30%;}
+           nav #logo img{height:15vh;}
+           nav #menu {width:70%; display:flex; justify-content: space-around;
+                     font-size:2rem;}
+         nav a{text-decoration:none;
+               color:black;
+               position:relative;
+            }
+        nav a::before{
+            content:"";
+            position:absolute;
+            width:0%;
+            top:100%;
+            height:.3rem;
+            background:pink;
+            transition:linear all 0.5s;
+        }
+        nav a:hover::before{
+            width:100%;
+            
+        }
+
+        section{width:100%; }
+
+body{height:100vh; display:flex; flex-direction:column;}
+table{padding:1rem;}
+ td{display:block; padding-top:1rem;}
+#form{ font-weight:bold; margin:1rem auto; width:50%;  
+text-align:center; display:flex; flex-direction:column; align-items:center;
+background:radial-gradient(white,pink);} 
+
+input{width:15rem; padding:1rem;}
+
+
+/*-------------------------------footer-------------------------*/
+footer{width:100%;  margin-top:auto; display:flex; align-items: center; padding-top:1rem; 
+background:black; color:white;
+justify-content: space-between;}
+footer div{flex-basis:23%;}
+.fi img{width:3rem; height:auto;}
+
+
+
+@media(max-width:800px){
+    html{font-size:50%;}
+    nav #logo img{width:100%;}
+    footer div{text-align:center;}
+}
+@media(max-width:400px){
+    html{font-size:35%;}
+    body{height:100vh;}
+    footer{display:block; align-items: center; text-align:center;}
+footer div{width:100%; padding-top:.5rem;}
+
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+
+
+    <nav>
+        <div id="logo">
+            <img src="images//mart.png">
+        </div>
+        <div id="menu">
+            <a href="grid.html">home</a>
+            <a href="product.html">product</a>
+            <a href="const.html">about</a>
+            <a href="const.html">contact</a>
+            <a href="account.html">account</a>
+        </div>
+    </nav>
+
+    <section>
+
+
+<div id="form">
+
+<form>
+
+
+<table >
+
+
+<tr>
+    <td><labe>name</labe></td>   
+    <td><input typr="text" name="text" autofocus required placeholder="name/gamil"></td>
+</tr>
+
+
+<tr>
+    <td><labe>password</labe></td>   
+    <td><input typr="password" name="password"  required placeholder="password"></td>
+</tr>
+
+<tr>
+    <td><input type="submit" name="sb"  value="login"></td>
+</tr>
+
+<tr>
+    <td><a href="create.html">create account</a></td><td><a href="">forgot password</a></td>
+</tr>
+
+
+</table>
+
+</form>
+
+</div>
+
+
+    </section>
+
+    <!-------------------------------------footer---------------------------->
+    <footer>
+        <div >
+        <h1>download our app</h1>
+        <p>available for android ,ios and window</p>
+        </div>
+        <div  >
+            <img src="images//mart.png">
+        </div>
+        <div  >
+          <ul>
+              <li><h1>follow us on</h1></li>
+              <l1><h3>facebook</h3></l1>
+              <l1><h3>twitter</h3></l1>
+              <l1><h3>instagram</h3></l1>
+          </ul>
+        </div>
+        <div class="fi" >
+            <img src="images/insta.png"><br>
+            <img src="images//whats.png"><br>
+            <img src="https://blog.logomyway.com/wp-content/uploads/2020/12/twitter-logo2.jpg">
+        </div>
+        
+        <hr
+    </footer>
+</body>
+</html>
